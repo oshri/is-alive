@@ -6,7 +6,7 @@
   "typings": "lib/index",
   "scripts": {
     "start": "npm run build:live",
-    "build:live": "NODE_ENV=development nodemon --exec ./node_modules/.bin/ts-node -- ./src/index.ts"
+    "build:live": "NODE_ENV=development nodemon --exec  ./node_modules/.bin/ts-node -- ./src/index.ts --debug"
   },
   "keywords": [],
   "author": "",

@@ -9,11 +9,11 @@ interface IHandlers {
 
 // Define Router Handlers
 const handlers: IHandlers = {
-	ping: (data, cb) => {
-		cb(406, { name: 'Hi i am Ping Handler' });
+	ping: (data, callback) => {
+		callback(null, { name: 'Hi i am Ping Handler' });
 	},
-	notFound: (data, cb) => {
-		cb(404);
+	notFound: (data, callback) => {
+		callback(404);
 	}
 };
 

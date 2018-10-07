@@ -2,8 +2,10 @@ import * as url from 'url';
 import * as stringDecoder from 'string_decoder';
 
 import { handlers, router } from './router';
+import { JsonFile } from './utils/JsonFile';
 
 const StringDecoder = stringDecoder.StringDecoder;
+const _jsonFile = new JsonFile();
 
 const handleServer = (req, res) => {
 	// Handle Path & Query String
